@@ -39,13 +39,23 @@ namespace TPLOCAL1.Controllers
 
 
         //méthode pour envoyer les données du formulaire vers la page de validation
-      //  [HttpPost]
-      //  public ActionResult ValidationFormulaire(/*model*/)
-      //  {
+        [HttpPost]
+        public ActionResult ValidationFormulaire(FormulaireComplet model)
+        {
+            if (ModelState.IsValid ) 
+                
+            {
+                return View("ValidationFormulaire", model);
+            }
+            else
+            {
+                return View("Formulaire", model);
+            }
             //reste à faire : tester de si les champs du modele sont bien remplis
             //s'ils ne sont pas bien remplis, afficher une erreur et rester sur la page formulaire
             //sinon, appeler la page ValidationFormulaire avec les données remplies par l'utilisateur
 
-      //  }
+        }
     }
+
 }

@@ -88,9 +88,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Site.css" />
     <Content Include="FichierXML\DataAvis.xml" />
     <Content Include="Global.asax" />
     <Content Include="ressources\GroupeHN.png" />
+    <Content Include="ressources\Index.css" />
+    <Content Include="ressources\Formulaire.css" />
+    <Content Include="ressources\ListeAvis.css" />
+    <Content Include="ressources\ValidationFormulaire.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +105,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Avis.cs" />
+    <Compile Include="Models\FormulaireComplet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +113,12 @@
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="ressources\Mise en place TP Formation double compétence - Spécifications_V1.6.docx" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\Formulaire.cshtml" />
+    <Content Include="Views\Shared\ListeAvis.cshtml" />
+    <Content Include="Views\Shared\ValidationFormulaire.cshtml" />
+    <Content Include="Views\Home\ValidationFormulairelist.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -116,7 +128,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
